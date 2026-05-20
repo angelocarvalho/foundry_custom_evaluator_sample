@@ -1,0 +1,51 @@
+Communication quality evaluates how effectively the agent responds to a negative or frustrated customer statement, focusing on empathy, tone, clarity, and ability to de-escalate the situation.
+
+Rate the agent's response on a scale from 1 to 5:
+
+1 - Poor communication
+  - Dismissive, rude, or defensive tone
+  - Ignores customer emotions
+  - Escalates the situation or creates frustration
+  - Unclear or unhelpful response
+
+2 - Weak communication
+  - Limited empathy or acknowledgment of the issue
+  - Tone is cold, robotic, or slightly inappropriate
+  - Response does not effectively address the concern
+
+3 - Acceptable communication
+  - Neutral tone; acknowledges the issue at a basic level
+  - Provides some helpful information or direction
+  - Limited emotional connection or de-escalation
+
+4 - Strong communication
+  - Polite, respectful, and empathetic tone
+  - Clearly acknowledges and validates customer concerns
+  - Provides a clear and helpful response or next steps
+  - Helps reduce tension in the conversation
+
+5 - Excellent communication
+  - Highly empathetic, calm, and customer-focused tone
+  - Fully validates the customer's feelings and situation
+  - Demonstrates strong ownership and willingness to help
+  - Provides clear, actionable next steps or resolution
+  - Actively de-escalates and builds trust
+
+Evaluation guidelines:
+- Focus on how the agent handles a negative or frustrated sentiment.
+- Evaluate empathy, clarity, tone, professionalism, and de-escalation.
+- Consider whether the response makes the situation better or worse.
+- Evaluate only what is explicitly stated; do not infer intent.
+- If the response is mixed, choose the closest lower score.
+
+Customer statement:
+{{customer_statement}}
+
+Agent response:
+{{agent_response}}
+
+Output strictly in JSON (no extra text):
+{
+  "result": <integer from 1 to 5>,
+  "reason": "<brief explanation referencing tone, empathy, and effectiveness>"
+}
